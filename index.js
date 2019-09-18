@@ -1,9 +1,17 @@
+$(document).ready(() => {
+  $(".slideshow .slick").slick({
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed: 1000,
+  });
+});
+
 let toggler = () => {
   let x = document.querySelector(".ham-menu");
-  if (x.style.display === "flex") {
-    x.style.display = "none";
+  if (x.style.opacity === "1") {
+    x.style.opacity = "0";
   } else {
-    x.style.display = "flex";
+    x.style.opacity = "1";
   }
   let y = document.querySelector(".menu-toggler i");
   if (y.className === "fas fa-times") {
