@@ -1,10 +1,25 @@
-$(document).ready(() => {
-  $(".slideshow .slick").slick({
-    autoplay: true,
-    autoplaySpeed: 1000,
-    speed: 1000,
-  });
-});
+$sliderMain = $(".slideshow .slick");
+
+let settings = {
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 1000,
+  dots: true,
+  infinite: true,
+  responsive: [{ breakpoint: 572, settings: "unslick" }],
+};
+
+let sliderShow = () => {
+  $sliderMain.not(".slick-initialized").slick(settings);
+};
+
+let update = () => {
+  if ($(window).width() > 572) {
+    document.querySelector(".ham-menu").removeAttribute("style");
+    document.querySelector(".menu-toggler i").className = "fas fa-bars";
+    sliderShow();
+  }
+};
 
 let toggler = () => {
   let x = document.querySelector(".ham-menu");
@@ -21,11 +36,8 @@ let toggler = () => {
   }
 };
 
-let reset = () => {
-  if (window.innerWidth > 572) {
-    document.querySelector(".ham-menu").removeAttribute("style");
-    document.querySelector(".menu-toggler i").className = "fas fa-bars";
-  }
-};
+$(document).ready(() => {
+  sliderShow();
+});
 
-window.addEventListener("resize", reset);
+window.addEventListener("resize", update);
