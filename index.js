@@ -25,7 +25,9 @@ let toggler = () => {
   let x = document.querySelector(".ham-menu");
   if (x.style.opacity === "1") {
     x.style.opacity = "0";
+    x.style.display = "none";
   } else {
+    x.style.display = "flex";
     x.style.opacity = "1";
   }
   let y = document.querySelector(".menu-toggler i");

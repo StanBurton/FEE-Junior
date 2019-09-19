@@ -183,13 +183,13 @@ body {
 }
 
 .ham-menu {
-  display: flex;
+  display: none;
   opacity: 0;
   width: calc(100% + 1px);
   position: absolute;
   overflow: hidden;
   z-index: -1;
-  top: 61px;
+  top: 60px;
   left: 0;
   background-color: #ffffff;
   box-shadow: 0px 15px 13px 0px #192d3313;
@@ -205,7 +205,7 @@ body {
 
 .ham-menu ul li {
   padding: 15px 0;
-  border-bottom: 1px solid #314584;
+  border-bottom: 1px solid #31448467;
 }
 
 .ham-menu li:last-child {
