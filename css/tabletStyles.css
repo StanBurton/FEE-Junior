@@ -1,0 +1,27 @@
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+  .titles {
+    width: 80%;
+  }
+  .titles p {
+    margin-bottom: 70px;
+  }
+  .slideshow {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top: 0;
+  }
+  .slideshow .slick {
+    width: 80%;
+  }
+  .titles-btns {
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+

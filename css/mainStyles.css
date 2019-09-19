@@ -97,6 +97,7 @@ body {
   position: absolute;
   text-align: center;
 }
+
 .logo-nav-mobile img,
 .logo-nav img {
   width: 70px;
@@ -290,6 +291,7 @@ body {
   width: 100%;
   cursor: pointer;
 }
+
 .slideshow div img {
   width: 100%;
 }
@@ -492,77 +494,5 @@ textarea {
   .titles h1 {
     font-size: 43px;
     line-height: 52px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    width: 85%;
-  }
-  .titles {
-    width: 80%;
-  }
-  .titles p {
-    margin-bottom: 70px;
-  }
-  .slideshow {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    left: 0;
-    top: 0;
-  }
-  .slideshow .slick {
-    width: 80%;
-  }
-  .titles-btns {
-    margin: 0 auto;
-    margin-bottom: 70px;
-  }
-
-  @media screen and (max-width: 572px) {
-    .header {
-      padding: 13px 0 13px 0;
-      box-shadow: 0 5px 10px #192d332a;
-      position: fixed;
-      width: 100%;
-    }
-    .container {
-      width: 95%;
-    }
-    .logo-nav-mobile {
-      display: block;
-    }
-    .left-nav {
-      display: none;
-    }
-    .menu-toggler {
-      display: block;
-      color: #314584;
-      font-size: 30px;
-    }
-    .main {
-      padding-top: 135px;
-    }
-    .titles-btns {
-      flex-direction: column;
-      width: 100%;
-    }
-    .titles-btns button {
-      margin-bottom: 20px;
-    }
-    .slick div:not(:first-child) {
-      display: none;
-    }
-    .info ul {
-      display: none;
-    }
-  }
-}
-
-@media screen and (max-width: 371px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 100%));
   }
 }
