@@ -219,8 +219,9 @@ body {
 
 .main {
   padding-top: 13.189%;
-  /* padding-top: 251px; */
   position: relative;
+  box-shadow: 0 5px 40px #192d3321;
+  padding-bottom: 62px;
 }
 
 .content {
@@ -400,6 +401,72 @@ textarea {
   box-shadow: 0 5px 5px #ff39463d;
 }
 
+/* Footer */
+
+.footer {
+  background-color: #314584;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 3.5vw;
+}
+
+.info p {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.info h3 {
+  color: #ff3946;
+  text-align: center;
+  font-size: 48.43px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.info ul {
+  display: flex;
+  width: 550px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 51px;
+}
+
+.info-ul-item a {
+  color: #ffffff;
+}
+
+.info h6 {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.info-icons {
+  display: flex;
+  width: 258px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.info-icons i {
+  color: #ffffff;
+  font-size: 30px;
+  padding-bottom: 55px;
+}
+
 @media screen and (max-width: 1325px) {
   .nav-ul-item:last-child a {
     color: #ff3946;
@@ -480,6 +547,7 @@ textarea {
     }
     .titles-btns {
       flex-direction: column;
+      width: 100%;
     }
     .titles-btns button {
       margin-bottom: 20px;
@@ -487,5 +555,14 @@ textarea {
     .slick div:not(:first-child) {
       display: none;
     }
+    .info ul {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 371px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 100%));
   }
 }
